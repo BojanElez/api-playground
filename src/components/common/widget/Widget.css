@@ -1,0 +1,67 @@
+.widget {
+  background-color: var(--card);
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.widget:hover {
+  box-shadow: var(--shadow);
+}
+.widget-title {
+  padding: 24px 24px 12px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--line);
+}
+.widget-content {
+  padding: 24px;
+  min-height: 100px;
+}
+.widget-empty {
+  border: 1px dashed var(--border-color, #e2e8f0);
+  border-radius: 12px;
+  padding: 14px;
+  color: var(--text-secondary, #64748b);
+  background-color: var(--surface-muted);
+  font-size: 14.72px;
+}
+.widget--full {
+  width: 100%;
+}
+.widget--half {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .widget--half {
+    width: 100%;
+  }
+
+  .widget-title {
+    padding: 20px 20px 10px 20px;
+    font-size: 16px;
+  }
+
+  .widget-content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .widget {
+    border-radius: 6px;
+  }
+
+  .widget-title {
+    padding: 16px 16px 8px 16px;
+    font-size: 15.2px;
+  }
+
+  .widget-content {
+    padding: 16px;
+    min-height: 80px;
+  }
+}

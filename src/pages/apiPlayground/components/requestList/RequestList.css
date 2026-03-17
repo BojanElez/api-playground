@@ -1,0 +1,123 @@
+.request-list-header {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.request-list-header h3 {
+  margin: 0;
+}
+.request-list-counter {
+  color: var(--muted);
+  font-size: 13.76px;
+}
+.request-list-tools {
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  gap: 10px;
+  align-items: end;
+}
+.request-list-sort-wrap {
+  color: var(--ink);
+}
+.request-list-items {
+  list-style: none;
+  margin: 12px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.request-list-item {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  background-color: var(--surface);
+  color: var(--ink);
+}
+.request-list-item-top {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.request-list-item .btn {
+  margin-left: auto;
+}
+.request-list-date {
+  margin-left: auto;
+  font-size: 11.84px;
+  color: var(--muted);
+}
+.request-list-url {
+  margin: 0;
+  word-break: break-all;
+  font-weight: 600;
+}
+.request-list-link {
+  display: inline-flex;
+  margin-top: 8px;
+  font-size: 13.12px;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.request-list-link:hover {
+  text-decoration: underline;
+}
+.request-list-delete-button {
+  margin-top: 8px;
+}
+.request-list-body {
+  margin: 8px 0 0;
+  background-color: var(--code-bg);
+  color: var(--code-text);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 12.16px;
+  overflow: auto;
+}
+.request-list-empty {
+  padding: 20px;
+  text-align: center;
+  border: 1px dashed var(--line);
+  border-radius: 12px;
+  color: var(--primary-color);
+}
+.request-list-pagination {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.request-list-pagination-pages {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+.request-list-page-button {
+  min-width: 34px;
+}
+.request-list-page-button.request-list-page-button--active {
+  background-color: var(--primary-color);
+  color: var(--text-inverse);
+  box-shadow:
+    0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+.request-list-page-button.request-list-page-button--active:hover {
+  background-color: var(--primary-hover);
+}
+
+@media (max-width: 768px) {
+  .request-list-tools {
+    grid-template-columns: 1fr;
+  }
+  .request-list-pagination {
+    justify-content: center;
+  }
+}

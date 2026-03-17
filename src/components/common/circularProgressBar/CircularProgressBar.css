@@ -1,0 +1,64 @@
+.circular-progress {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circular-progress-svg {
+  display: block;
+}
+
+.circular-progress-track,
+.circular-progress-indicator {
+  transition: stroke 0.2s ease;
+}
+
+.circular-progress-center {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.circular-progress-value {
+  font-size: 25.6px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--text-primary);
+}
+
+.circular-progress-label {
+  margin-top: 4px;
+  font-size: 11.52px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.circular-progress-legend {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.circular-progress-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.16px;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.circular-progress-legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}

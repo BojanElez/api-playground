@@ -1,0 +1,63 @@
+.textarea-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+.textarea-label {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+  user-select: none;
+}
+.textarea-wrapper--error .textarea-label {
+  color: var(--error-color);
+}
+.textarea-wrapper--disabled .textarea-label {
+  color: var(--disabled-text);
+}
+.textarea-label--required::after {
+  content: ' *';
+  color: var(--error-color);
+}
+.textarea-field {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1.5px solid var(--field-border);
+  border-radius: 4px;
+  background-color: var(--field-bg);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-primary);
+  outline: none;
+  resize: vertical;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.textarea-field::placeholder {
+  color: var(--placeholder-color);
+}
+.textarea-wrapper--error .textarea-field {
+  border-color: var(--error-color);
+}
+.textarea-field:disabled {
+  background-color: var(--field-disabled-bg);
+  border-color: var(--line);
+  color: var(--disabled-text);
+  cursor: not-allowed;
+  resize: none;
+}
+.textarea-field:disabled::placeholder {
+  color: var(--disabled-text);
+}
+.textarea-error-text {
+  font-size: 11px;
+  color: var(--error-color);
+  letter-spacing: 0.03em;
+  margin-top: 2px;
+}
