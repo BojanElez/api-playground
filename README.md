@@ -14,12 +14,11 @@ npm install
 
 3. Configure environment variables
 
-- Create a `.env` file in the project root.
-- Add your Google OAuth client ID:
-- Or remove .example from .env.example extension
+- Use existing a `.env.example` rename it to `.env` file in the project root.
+- Add Google OAuth client ID:
 
 ```env
-VITE_GOOGLE_CLIENT_ID=your_google_client_id_here
+VITE_GOOGLE_CLIENT_ID=existing_google_client_id_here
 ```
 
 4. Start development server
